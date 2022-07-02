@@ -1,0 +1,29 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	i := 1
+	for i <= 3 {
+		fmt.Println(i)
+		i = i + 1
+	}
+
+	for j := 7; j <= 9; j++ {
+		fmt.Println(j)
+	}
+
+	// 不带条件的 for 循环将一直重复执行， 直到在循环体内使用了 break 或者 return 跳出循环。
+	for {
+		fmt.Println("loop")
+		break
+	}
+
+	for n := 0; n <= 5; n++ {
+		if n%2 == 0 {
+			continue
+		}
+		fmt.Println(n)
+	}
+}
